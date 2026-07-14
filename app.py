@@ -18,11 +18,16 @@ if "transcript_processed" not in st.session_state:
 with st.sidebar:
     st.header("About")
     st.write(
-        "This tool uses Google Gemini for summarization and answering questions, "
-        "and a local vector search (RAG) pipeline to ground answers in your transcript "
+        "This tool turns long lecture or meeting transcripts into a quick, structured "
+        "summary with action items, and lets you ask specific questions about the content "
+        "instead of re-reading everything."
+    )
+    st.write(
+        "It uses Google Gemini for summarization and answering questions, combined with a "
+        "local retrieval (RAG) pipeline that grounds every answer in your actual transcript "
         "rather than letting the model guess."
     )
-    st.write("Built as a personal project to speed up revising lecture notes.")
+    
 
 # --- Input section ---
 st.subheader("1. Paste your transcript")
