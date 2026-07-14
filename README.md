@@ -1,4 +1,5 @@
 # AI Study Companion
+🔗 **[Try it live](https://ai-study-companion-bhagavathi-padishala.streamlit.app)**
 
 An AI-powered tool that summarizes lecture or meeting transcripts into a clean summary with action items, and lets you ask follow-up questions grounded in the original content using Retrieval-Augmented Generation (RAG).
 
