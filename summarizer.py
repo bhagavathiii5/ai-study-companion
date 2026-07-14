@@ -3,6 +3,11 @@ from dotenv import load_dotenv
 from google import genai
 
 load_dotenv()
+def get_api_key():
+    try:
+        return st.secrets["GEMINI_API_KEY"]
+    except:
+        return os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 def summarize_transcript(transcript: str) -> str:
